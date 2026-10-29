@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EKSPLORA — Platform Ekstrakurikuler Sekolah">
+  <title>EKSPLORA | Platform Ekstrakurikuler Sekolah</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="EKSPLORA Beranda">
+      <span class="brand-mark">E</span>
+      <span class="brand-name">EKSPLORA</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="#beranda">Beranda</a>
+      <a href="#ekstrakurikuler">Ekstrakurikuler</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-outline" href="#login-info">Masuk</a>
+      <a class="btn btn-primary" href="#ekstrakurikuler">Jelajahi</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="beranda">
+      <div class="hero-copy">
+        <span class="eyebrow">Temukan minatmu, kembangkan potensimu</span>
+        <h1>Explore Your Passion,<br><span>Discover Your Potential.</span></h1>
+        <p>EKSPLORA membantu siswa mengenal berbagai kegiatan ekstrakurikuler, melihat jadwal, dan menemukan ruang untuk mengembangkan minat serta bakat di sekolah.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-large" href="#ekstrakurikuler">Jelajahi Ekstrakurikuler <span aria-hidden="true">→</span></a>
+          <a class="btn btn-outline btn-large" href="#tentang">Tentang EKSPLORA</a>
+        </div>
+        <div class="hero-note"><span class="note-dot"></span> Satu platform untuk kegiatan ekstrakurikuler sekolah</div>
+      </div>
+      <div class="hero-art" aria-label="Ilustrasi kegiatan siswa">
+        <div class="art-circle circle-one"></div>
+        <div class="art-circle circle-two"></div>
+        <div class="art-card">
+          <span class="art-icon">✦</span>
+          <strong>Kenali potensimu</strong>
+          <small>Mulai dari kegiatan yang kamu sukai.</small>
+        </div>
+        <div class="student-illustration">
+          <div class="student student-blue"><span class="head"></span><span class="body"></span></div>
+          <div class="student student-yellow"><span class="head"></span><span class="body"></span></div>
+          <div class="student student-purple"><span class="head"></span><span class="body"></span></div>
+          <div class="book book-one"></div><div class="book book-two"></div>
+        </div>
+        <div class="floating-badge"><span>★</span> Minat • Bakat • Prestasi</div>
+      </div>
+    </section>
+
+    <section class="stats section-wrap" aria-label="Manfaat EKSPLORA">
+      <div class="stat"><span class="stat-icon blue">◎</span><div><strong>Kenali</strong><small>Beragam pilihan kegiatan</small></div></div>
+      <div class="stat"><span class="stat-icon gold">✦</span><div><strong>Kembangkan</strong><small>Minat dan bakatmu</small></div></div>
+      <div class="stat"><span class="stat-icon green">✓</span><div><strong>Terorganisasi</strong><small>Informasi dalam satu tempat</small></div></div>
+    </section>
+
+    <section class="activities section-wrap" id="ekstrakurikuler">
+      <div class="section-heading">
+        <div><span class="eyebrow">Pilih kegiatanmu</span><h2>Jelajahi Ekstrakurikuler</h2><p>Temukan kegiatan yang sesuai dengan minat dan tujuanmu.</p></div>
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="activitySearch" type="search" placeholder="Cari ekstrakurikuler..." aria-label="Cari ekstrakurikuler"></label>
+      </div>
+      <div class="activity-grid" id="activityGrid">
+        <article class="activity-card" data-name="pramuka kepemimpinan alam">
+          <div class="activity-icon orange">⚑</div><h3>Pramuka</h3><p>Belajar mandiri, kerja sama, dan kepemimpinan.</p><span class="activity-tag">Kepemimpinan</span>
+        </article>
+        <article class="activity-card" data-name="pmr kesehatan pertolongan">
+          <div class="activity-icon red">✚</div><h3>PMR</h3><p>Mengembangkan kepedulian dan keterampilan pertolongan pertama.</p><span class="activity-tag">Kemanusiaan</span>
+        </article>
+        <article class="activity-card" data-name="paskibra disiplin baris berbaris">
+          <div class="activity-icon blue">⚑</div><h3>Paskibra</h3><p>Melatih disiplin, tanggung jawab, dan kekompakan.</p><span class="activity-tag">Kedisiplinan</span>
+        </article>
+        <article class="activity-card" data-name="basket olahraga tim">
+          <div class="activity-icon gold">◉</div><h3>Basket</h3><p>Meningkatkan kebugaran, strategi, dan kerja sama tim.</p><span class="activity-tag">Olahraga</span>
+        </article>
+        <article class="activity-card" data-name="seni tari budaya kreativitas">
+          <div class="activity-icon purple">✿</div><h3>Seni Tari</h3><p>Mengekspresikan kreativitas dan mengenal seni budaya.</p><span class="activity-tag">Seni dan budaya</span>
+        </article>
+        <article class="activity-card" data-name="voli olahraga tim">
+          <div class="activity-icon green">◉</div><h3>Voli</h3><p>Melatih koordinasi, sportivitas, dan komunikasi.</p><span class="activity-tag">Olahraga</span>
+        </article>
+      </div>
+      <p class="empty-state" id="emptyState" hidden>Tidak ada kegiatan yang cocok dengan pencarianmu.</p>
+      <p class="demo-note">Catatan: daftar kegiatan di halaman ini merupakan contoh awal dan dapat disesuaikan dengan data sekolah.</p>
+    </section>
+
+    <section class="about section-wrap" id="tentang">
+      <div class="about-mark">E</div>
+      <div><span class="eyebrow">Tentang platform</span><h2>Satu ruang untuk tumbuh dan berprestasi.</h2><p>EKSPLORA dirancang untuk mendukung pengelolaan ekstrakurikuler sekolah. Dalam pengembangan selanjutnya, sistem akan memiliki akses berbeda untuk siswa, ketua ekstrakurikuler, guru pembina, dan admin sekolah.</p></div>
+    </section>
+
+    <section class="login-info section-wrap" id="login-info">
+      <div><span class="eyebrow">Akses pengguna</span><h2>Dirancang untuk seluruh pengelola kegiatan.</h2><p>Setiap peran akan memiliki menu sesuai tanggung jawabnya. Fitur login dan dashboard berbasis akun akan dibuat pada tahap pengembangan berikutnya.</p></div>
+      <div class="role-list">
+        <div><span>01</span><strong>Siswa / Anggota</strong><small>Informasi, pendaftaran, jadwal</small></div>
+        <div><span>02</span><strong>Ketua Ekstrakurikuler</strong><small>Koordinasi anggota dan kegiatan</small></div>
+        <div><span>03</span><strong>Guru Pembina</strong><small>Jadwal, absensi, dan laporan</small></div>
+        <div><span>04</span><strong>Admin Sekolah</strong><small>Data pengguna dan pengelolaan sistem</small></div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="kontak">
+    <a class="brand footer-brand" href="#beranda"><span class="brand-mark">E</span><span class="brand-name">EKSPLORA</span></a>
+    <p>Platform Ekstrakurikuler Sekolah</p>
+    <small>© <span id="year"></span> EKSPLORA · Proyek Sistem Informasi Pendidikan</small>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
